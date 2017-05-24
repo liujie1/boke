@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>主页</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap/css/bootstrap.min.css"/>
+  </head>
+  <body>
+  	<div class="nav">
+  			<div class="navhead">
+	  			<div class="logo">刘林杰的博客</div>	
+	  			<ul class="nav-list">
+	  					<li><a href="/">主页</a></li>
+	  					<li><a href="">分享</a></li>
+	  					<li><a href="/users/showlist">留言板</a></li>
+	  			</ul>
+	  			<div class="login">
+				  	<% if(!user){ %>
+				    <button onclick="location.href='/login'">登陆</button>
+				    <button onclick="location.href='/register'">注册</button>
+				    <% }else{ %>
+				    		<span><%- user%></span>
+				    		<button onclick="location.href='/relogin'">退出</button>
+				    		<button onclick="location.href='/liuyan'">去留言</button>
+				    <%}%>
+	  			</div>
+  			</div>
+  	</div>
+  			<div id="divNavBar">
+					<ul>
+					 		<li><a href="###">首页</a></li><li><a href="###" title="感悟生活点滴">大生活</a></li><li><a href="###" title="光与影的艺术">光影斑斓</a></li><li><a href="###" title="一切有为法，如梦幻泡影，如露亦如电，应作如是观。">如是观</a></li><li><a href="###" target="_blank" title="还是以前的圈圈微博！">圈圈说</a></li><li><a href="###" title="沟通从这里开始">留言本</a></li>
+			   </ul>
+		</div>
+  	    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="post-preview">
+                    <a href="/listdet?id=591e9966030afe27148d2c76">
+                        <h2 class="post-title">
+                                                                                 初冬，景如故
+                        </h2>
+                        <h3 class="post-subtitle">
+											 进入冬季，天很冷，时不时下点小雨，街上妖风阵阵，吹的人老想咳嗽，已经半个月没见阳光了。感觉自己就像对面楼顶的那棵树，每天随风摇摆，心无所住 ……
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2017</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="/listdet?id=591e9989030afe27148d2c77">
+                        <h2 class="post-title">
+                          	 山花烂漫的季节，我们各自冷暖自知
+                        </h2>
+                        <h3 class="post-subtitle">
+                                                                                    时间久了，就对节日渐渐的没有了喜悦感，反而会更加是适应这种状态，在无声无息的岁月里挣扎着，徘徊着，就像一位弱视者伸着手步履蹒跚的向前走着，眼前有光和影子，却始终也看不清……
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 18, 2017</p>
+                </div>
+                <hr>
+                <div class="post-preview">
+                    <a href="/listdet?id=591e99ce030afe27148d2c78">
+                        <h2 class="post-title">
+                           	 五十度灰的天空
+                        </h2>
+                        <h3 class="post-subtitle">
+                            此刻窗外的天空还蒙着一层50度的灰，春天迁徙过来家燕已经孵出了一窝小燕子，在外面叽叽喳喳的叫着，朝气蓬勃。可是到了秋天又有几只小燕子跟随妈妈南去呢，这不得而知，我只看见有的还没学会飞就不幸夭折，有的再夏季的狂风暴雨中无力挣扎，这就是命，是规律 ……
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2017</p>
+                </div>
+                <hr>
+                <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="网站模板"></a></div>
+                <div class="post-preview">
+                    <a href="/listdet?id=591e99ff030afe27148d2c79">
+                        <h2 class="post-title">
+                           	 见路不走，清明
+                        </h2>
+                        <h3 class="post-subtitle">
+                               无论是面对厄运还是幸运都应该保持平常心，喜怒伤身，情绪伤神，执念误一生。医生笑着说这是他从医以来，见到的为数不多的案例，可谓是奇迹，而我的心却很平静，至此才真正领悟到了无为和不争。
+                        </h3>
+                    </a>
+                    <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on July 8, 2017</p>
+                </div>
+                <hr>
+                <!-- Pager -->
+                <div class="clearfix">
+                    <a class="btn btn-secondary float-right" href="#">旧的足迹&rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="weixin">
+    		<img src="images/QQ.jpg"/>
+    </div>
+  </body>
+</html>
